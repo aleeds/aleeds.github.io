@@ -1,0 +1,24 @@
+<html>
+  <body>
+      <div align = "center">
+          <h1> Click as fast as you can! </h1>
+
+
+          <script>
+              var state = true;
+              var firstArray = [1,2,3,4,5, "Candy"];
+              var player = {};
+              player.name = "Andy";
+              player.highScore = 0;
+              function myFunction() {
+                  document.getElementById("demo").innerHTML = player.highScore++;
+              }
+          </script>
+
+          <h2><p id = "demo" >Begin!</p></h2>
+          <button type="button" onClick ="myFunction()"> I demand to be clicked! </button>
+      </div>
+    </body>
+
+</html>
+
