@@ -89,11 +89,10 @@ var bigDraw = function(which) {
            // circ(i,q,1);
             var eD = eDistC(i,q);
             var newXy = deform(xy,eD);
-            strokeWeight(0.1);
+            strokeWeight(0.2);
             stroke(191, 74, 191);
-            //circ(newXy.x,newXy.y,1);
             line(xy.x,xy.y,newXy.x,newXy.y);
-            circ(newXy.x,newXy.y,0.05);
+            circ(newXy.x,newXy.y,0.1);
         }
     }
 }
