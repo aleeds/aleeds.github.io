@@ -1,4 +1,4 @@
-size(500,500);
+size(800,800);
 
 ellipseMode(CENTER);
 var circ = function(x,y,r) {
