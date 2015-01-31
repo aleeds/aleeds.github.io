@@ -1,6 +1,5 @@
 void setup() {
     size(400,400);
-    //println("This gets called");
 }
 
 ellipseMode(CENTER);
