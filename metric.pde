@@ -8,7 +8,7 @@ var circ = function(x,y,r) {
     ellipse(x,y,r,r);
 };
 
-var seps = 15;
+var seps = 20;
 
 
 
