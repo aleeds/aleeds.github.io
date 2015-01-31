@@ -1,6 +1,4 @@
-void setup() {
-    size(400,400);
-}
+size(400,400);
 
 ellipseMode(CENTER);
 var circ = function(x,y,r) {
