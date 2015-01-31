@@ -18,8 +18,7 @@ var w = width;
 var h = height;
 var cX = w/2;
 var cY = h/2;
-line(width/2,0,width/2,height);
-line(0,height/2,width,height/2);
+
 var eDist = function(xone,yone,xtwo,ytwo) {
    var distX = xone - xtwo;
    var distY = yone - ytwo;
@@ -88,6 +87,8 @@ rect(0,0,25,25);
 rotate(-PI/4);
 translate(-width/2,-height/2);
 bigDraw();
+line(width/2,0,width/2,height);
+line(0,height/2,width,height/2);
 
 
 
