@@ -1,3 +1,7 @@
+void setup() {
+    size(800,800);
+}
+
 ellipseMode(CENTER);
 var circ = function(x,y,r) {
     ellipse(x,y,r,r);
@@ -7,8 +11,8 @@ var seps = 15;
 
 
 
-var w = 400;
-var h = 400;
+var w = width;
+var h = height;
 var cX = w/2;
 var cY = h/2;
 line(width/2,0,width/2,height);
