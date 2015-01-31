@@ -103,7 +103,7 @@ var bigDraw = function(which) {
                 line(xy.x,xy.y,newXy.x,newXy.y);
                 var colorShift = -75;
                 stroke(191 + colorShift, 74 + colorShift, 191 + colorShift);
-                strokeWeight(0.3);
+                strokeWeight(0.5);
                 circ(newXy.x,newXy.y,0.1);
             }
         }
