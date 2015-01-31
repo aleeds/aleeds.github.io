@@ -102,7 +102,7 @@ var bigDraw = function(which) {
                 strokeWeight(eDist(newXy.x,newXy.y,xy.x,xy.y)/300);
                 line(xy.x,xy.y,newXy.x,newXy.y);
                 
-                stroke(300,300,300);
+                stroke(200,200,200);
                 strokeWeight(0.5);
                 circ(newXy.x,newXy.y,0.3);
             }
