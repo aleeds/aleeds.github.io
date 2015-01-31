@@ -95,6 +95,8 @@ var bigDraw = function(which) {
             strokeWeight(0.2);
             stroke(191, 74, 191);
             line(xy.x,xy.y,newXy.x,newXy.y);
+            var colorShift = -25;
+            stroke(191 + colorShift, 74 + colorShift, 191 + colorShift);
             circ(newXy.x,newXy.y,0.1);
         }
     }
