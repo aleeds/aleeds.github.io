@@ -1,5 +1,5 @@
 size(800,800);
-
+background(250, 248, 239);
 ellipseMode(CENTER);
 var circ = function(x,y,r) {
     ellipse(x,y,r,r);
