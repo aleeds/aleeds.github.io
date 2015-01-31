@@ -1,6 +1,6 @@
 size(800,800);
 background(250, 248, 239);
-strokeWeight(10);
+strokeWeight(2);
 rect(0,0,width,height);
 strokeWeight(1);
 ellipseMode(CENTER);
