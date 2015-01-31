@@ -104,7 +104,7 @@ var bigDraw = function(which) {
                 
                 stroke(200,200,200);
                 strokeWeight(0.5);
-                circ(newXy.x,newXy.y,0.3);
+                circ(newXy.x,newXy.y,1);
             }
         }
     }
