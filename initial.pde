@@ -4,9 +4,7 @@ strokeWeight(2);
 rect(0,0,width,height);
 strokeWeight(1);
 ellipseMode(CENTER);
-rectMode(CENTER);
-rectMode(RADIUS);
-rect(width/2,height/2,25,25);
+
 
 var circ = function(x,y,r) {
     ellipse(x,y,r,r);
@@ -86,7 +84,7 @@ bigDraw();
 
 rectMode(CENTER);
 rectMode(RADIUS);
-rotate(PI/4);
+rotate(PI/4,width/2,height/2);
 rect(width/2,height/2,25,25);
 
 
