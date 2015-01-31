@@ -101,10 +101,10 @@ var bigDraw = function(which) {
                 //stroke(newXy.x,newXy.y,0);
                 strokeWeight(eDist(newXy.x,newXy.y,xy.x,xy.y)/300);
                 line(xy.x,xy.y,newXy.x,newXy.y);
-                var colorShift = -75;
-                stroke(191 + colorShift, 74 + colorShift, 191 + colorShift);
+                
+                stroke(300,300,300);
                 strokeWeight(0.5);
-                circ(newXy.x,newXy.y,0.1);
+                circ(newXy.x,newXy.y,0.3);
             }
         }
     }
