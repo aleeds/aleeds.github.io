@@ -78,7 +78,7 @@ var smallDraw = function(i,q) {
                     circ(xy.x,xy.y,.3);
                 
                 } else {
-                    strokeWeight(0.05);
+                    strokeWeight(0.1);
                     stroke(191, 74, 191);
                     //stroke(newXy.x,newXy.y,0);
                     //strokeWeight(eDist(newXy.x,newXy.y,xy.x,xy.y)/100);
