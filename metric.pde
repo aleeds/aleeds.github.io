@@ -93,8 +93,8 @@ var smallDraw = function(i,q) {
                 strokeWeight(0,0,0);
                 line(newXy.x,newXy.y,fst.x,fst.y);
                 line(newXy.x,newXy.y,scd.x,scd.y);
-                line(newXy.x,newXy.y,third.x,third.y);
-                line(newXy.x,newXy.y,fourth.x,fourth.y);
+                line(newXy.x,newXy.y,thrd.x,thrd.y);
+                line(newXy.x,newXy.y,frth.x,frth.y);
                 if (xy === newXy) {
                     circ(newXy.x,newXy.y,.3);
                 
