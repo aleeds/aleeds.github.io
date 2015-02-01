@@ -69,7 +69,7 @@ var deform = function(po,eD) {
     return tP;
 
 };
-var weight =
+var weight =.1;
 var bigDraw = function(which) {
     for (var i = width/2; i <= width ;i = i + seps) {
       for (var q = height/2; q <= height ; q = q + seps) {
