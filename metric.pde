@@ -26,11 +26,16 @@ var eDist = function(xone,yone,xtwo,ytwo) {
    return sqrt(distYSq + distXSq);
 };
 
+var myMax = function(one,two) {
+    if (one > two) return one;
+    else return two;
+}
+
 var dist1 = function(xone,yone,xtwo,ytwo) {
     var distX = xone - xtwo;
     var distY = yone - ytwo;
     //return abs(distX) + abs(distY);
-    return max(distX,distY);
+    return myMax(distX,distY);
 };
 
 var eDistC = function(x,y) {
