@@ -83,18 +83,18 @@ var smallDraw = function(i,q) {
                 var newXy = deform(xy,eD);
                 var first = new PVector(i-seps,q-seps);
                 var second = new PVector(i-seps,q+seps);
-                //var third = new PVector(i+seps,q-seps);
-                //var forth = new PVector(i+seps,q+seps);
+                var third = new PVector(i+seps,q-seps);
+                var forth = new PVector(i+seps,q+seps);
                 var fst = deform(first,eDistC(first.x,first.y));
                 var scd  = deform(second,eDistC(second.x,second.y));
-                //var thrd = deform(third,eDistC(third.x,third.y));
-                //var frth = deform(fourth,eDistC(fourth.x,fourth.y));
+                var thrd = deform(third,eDistC(third.x,third.y));
+                var frth = deform(fourth,eDistC(fourth.x,fourth.y));
                 strokeWeight(.2);
                 strokeWeight(0,0,0);
                 line(newXy.x,newXy.y,fst.x,fst.y);
                 line(newXy.x,newXy.y,scd.x,scd.y);
-                //line(newXy.x,newXy.y,third.x,third.y);
-                //line(newXy.x,newXy.y,fourth.x,fourth.y);
+                line(newXy.x,newXy.y,third.x,third.y);
+                line(newXy.x,newXy.y,fourth.x,fourth.y);
                 if (xy === newXy) {
                     circ(newXy.x,newXy.y,.3);
                 
