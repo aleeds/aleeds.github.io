@@ -75,7 +75,7 @@ var bigDraw = function(which) {
       for (var q = height/2; q <= height ; q = q + seps) {
         circ(i,q,.2);
       }
-      or (var q = height/2; q >= 0 ; q = q - seps) {
+      for (var q = height/2; q >= 0 ; q = q - seps) {
         circ(i,q,.2);
       }
     }
@@ -83,7 +83,7 @@ var bigDraw = function(which) {
       for (var q = height/2; q <= height ; q = q + seps) {
         circ(i,q,.2);
       }
-      or (var q = height/2; q >= 0 ; q = q - seps) {
+      for (var q = height/2; q >= 0 ; q = q - seps) {
         circ(i,q,.2);
       }
     }
