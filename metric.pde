@@ -80,7 +80,7 @@ var smallDraw = function(i,q) {
                 // circ(i,q,1);
                 var eD = eDistC(i,q);
                 var newXy = deform(xy,eD);
-                var first = new PVector(i-1,q-1);
+                var first = new PVector(i-seps,q-seps);
                 //var second = new PVector(i-1,q+1);
                 //var third = new PVector(i+1,q-1);
                 //var forth = new PVector(i+1,q+1);
