@@ -38,9 +38,9 @@ var myMax = function(one,two) {
 var dist1 = function(xone,yone,xtwo,ytwo) {
     var distX = xone - xtwo;
     var distY = yone - ytwo;
-    return abs(distX) + abs(distY);
+    //return abs(distX) + abs(distY);
     //return myMax(distX,distY);
-    //return Math.cbrt(pow(distX,3) + pow(distY,3));
+    return pow(pow(distX,3) + pow(distY,3),.33333333);
 };
 
 var eDistC = function(x,y) {
@@ -58,7 +58,7 @@ var midPoint = function(one,two) {
 
 var deform = function(po,eD) {
     var tPLower = new PVector(cX,cY);
-    var tPUpper = new PVector(2*po.x -cX,2*po.y -cY);
+    var tPUpper = new PVector(2*po.x - cX,2*po.y - cY);
     var tP = midPoint(tPUpper,tPLower);
     if (dist1C(po.x,po.y) === eD) {
         return po;
