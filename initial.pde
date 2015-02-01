@@ -74,17 +74,33 @@ var bigDraw = function(which) {
     for (var i = width/2; i <= width ;i = i + seps) {
       for (var q = height/2; q <= height ; q = q + seps) {
         circ(i,q,.2);
+        line(i, q,i+seps,q);
+        line(i, q,i-seps,q);
+        line(i, q,i,q + seps);
+        line(i, q,i,q - seps);
       }
       for (var q = height/2; q >= 0 ; q = q - seps) {
         circ(i,q,.2);
+        line(i, q,i+seps,q);
+        line(i, q,i-seps,q);
+        line(i, q,i,q + seps);
+        line(i, q,i,q - seps);
       }
     }
     for (var i = width/2; i >= 0 ;i = i - seps) {
       for (var q = height/2; q <= height ; q = q + seps) {
         circ(i,q,.2);
+        line(i, q,i+seps,q);
+        line(i, q,i-seps,q);
+        line(i, q,i,q + seps);
+        line(i, q,i,q - seps);
       }
       for (var q = height/2; q >= 0 ; q = q - seps) {
         circ(i,q,.2);
+        line(i, q,i+seps,q);
+        line(i, q,i-seps,q);
+        line(i, q,i,q + seps);
+        line(i, q,i,q - seps);
       }
     }
 };
