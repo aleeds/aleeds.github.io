@@ -70,32 +70,8 @@ var deform = function(po,eD) {
 };
 
 var bigDraw = function(which) {
-    for (var i = 0; i < width;i = i + seps) {
-    for (var q = 0; q < height ;q = q + seps) {
-        if (which === 0) {
-            var xy = new PVector(i,q);
-            stroke(0,0,0);
-            circ(i,q,0.5);
-            var eD = eDistC(i,q);
-            var newXy = deform(xy,eD);
-            stroke(255, 0, 0);
-            circ(newXy.x,newXy.y,0.5);
-        }  else if(which === 1) {
-            var xy = new PVector(i,q);
-           // circ(i,q,1);
-            var eD = eDistC(i,q);
-            var newXy = deform(xy,eD);
-            stroke(255, 0, 0);
-            circ(newXy.x,newXy.y,1);
-        } else {
-            var xy = new PVector(i,q);
-           // circ(i,q,1);
-            var eD = eDistC(i,q);
-            var newXy = deform(xy,eD);
-            if (xy === newXy) {
-                circ(xy.x,xy.y,.3);
-                
-            } else {
+    for (var i = width/2; i <= width;i = i + seps) {
+        for (var q = height/2; q <= height ;q = q + seps) {
                 strokeWeight(0.2);
                 stroke(191, 74, 191);
                 //stroke(newXy.x,newXy.y,0);
@@ -105,9 +81,48 @@ var bigDraw = function(which) {
                 stroke(117,3,133);
                 strokeWeight(1);
                 circ(newXy.x,newXy.y,1);
-            }
+            
+        }
+        for (var q = height/2; q >= 0 ;q = q - seps) {
+                strokeWeight(0.2);
+                stroke(191, 74, 191);
+                //stroke(newXy.x,newXy.y,0);
+                strokeWeight(eDist(newXy.x,newXy.y,xy.x,xy.y)/300);
+                line(xy.x,xy.y,newXy.x,newXy.y);
+                
+                stroke(117,3,133);
+                strokeWeight(1);
+                circ(newXy.x,newXy.y,1);
+            
+        }
+    } 
+    for (var i = width/2; i >= 0;i = i - seps) {
+        for (var q = height/2; q <= height ;q = q + seps) {
+                strokeWeight(0.2);
+                stroke(191, 74, 191);
+                //stroke(newXy.x,newXy.y,0);
+                strokeWeight(eDist(newXy.x,newXy.y,xy.x,xy.y)/300);
+                line(xy.x,xy.y,newXy.x,newXy.y);
+                
+                stroke(117,3,133);
+                strokeWeight(1);
+                circ(newXy.x,newXy.y,1);
+            
+        }
+        for (var q = height/2; q >= 0 ;q = q - seps) {
+                strokeWeight(0.2);
+                stroke(191, 74, 191);
+                //stroke(newXy.x,newXy.y,0);
+                strokeWeight(eDist(newXy.x,newXy.y,xy.x,xy.y)/300);
+                line(xy.x,xy.y,newXy.x,newXy.y);
+                
+                stroke(117,3,133);
+                strokeWeight(1);
+                circ(newXy.x,newXy.y,1);
+            
         }
     }
+    
 }
 };
 
