@@ -87,8 +87,8 @@ var smallDraw = function(i,q) {
                 //var forth = new PVector(i+seps,q+seps);
                 var fst = deform(first,eDistC(first.x,first.y));
                 var scd  = deform(second,eDistC(second.x,second.y));
-                var thrd = deform(third,eDistC(third.x,third.y));
-                var frth = deform(fourth,eDistC(fourth.x,fourth.y));
+                //var thrd = deform(third,eDistC(third.x,third.y));
+                //var frth = deform(fourth,eDistC(fourth.x,fourth.y));
                 strokeWeight(.2);
                 strokeWeight(0,0,0);
                 line(newXy.x,newXy.y,fst.x,fst.y);
