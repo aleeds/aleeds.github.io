@@ -81,10 +81,10 @@ var smallDraw = function(i,q) {
                 // circ(i,q,1);
                 var eD = eDistC(i,q);
                 var newXy = deform(xy,eD);
-                var first = new PVector(i-seps,q-seps);
-                var second = new PVector(i-seps,q+seps);
-                var third = new PVector(i+seps,q-seps);
-                var fourth = new PVector(i+seps,q+seps);
+                var first = new PVector(i-seps,q-0);
+                var second = new PVector(i-0s,q+seps);
+                var third = new PVector(i+0,q-seps);
+                var fourth = new PVector(i+seps,q+0);
                 var fst = deform(first,eDistC(first.x,first.y));
                 var scd  = deform(second,eDistC(second.x,second.y));
                 var thrd = deform(third,eDistC(third.x,third.y));
