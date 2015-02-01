@@ -13,7 +13,7 @@ var circ = function(x,y,r) {
 };
 
 var seps = 20;
-circ(width/2,height/2,2*seps,2*seps);
+//circ(width/2,height/2,2*seps,2*seps);
 
 
 var w = width;
