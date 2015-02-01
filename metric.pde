@@ -2,7 +2,9 @@
 size(800,800);
 background(250, 248, 239);
 strokeWeight(2);
+
 rect(0,0,width,height);
+circ(width/2,height/2,2*seps,2*seps);
 strokeWeight(1);
 ellipseMode(CENTER);
 var circ = function(x,y,r) {
@@ -139,7 +141,7 @@ var bigDraw = function(which) {
 
 
 bigDraw();
-circ(width/2,height/2,2*seps,2*seps);
+
 
 
 
