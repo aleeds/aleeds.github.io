@@ -72,6 +72,14 @@ var deform = function(po,eD) {
 var bigDraw = function(which) {
     for (var i = width/2; i <= width;i = i + seps) {
         for (var q = height/2; q <= height ;q = q + seps) {
+                var xy = new PVector(i,q);
+           // circ(i,q,1);
+            var eD = eDistC(i,q);
+            var newXy = deform(xy,eD);
+            if (xy === newXy) {
+                circ(xy.x,xy.y,.3);
+                
+            } else {
                 strokeWeight(0.2);
                 stroke(191, 74, 191);
                 //stroke(newXy.x,newXy.y,0);
@@ -81,9 +89,18 @@ var bigDraw = function(which) {
                 stroke(117,3,133);
                 strokeWeight(1);
                 circ(newXy.x,newXy.y,1);
+            }
             
         }
         for (var q = height/2; q >= 0 ;q = q - seps) {
+               var xy = new PVector(i,q);
+           // circ(i,q,1);
+            var eD = eDistC(i,q);
+            var newXy = deform(xy,eD);
+            if (xy === newXy) {
+                circ(xy.x,xy.y,.3);
+                
+            } else {
                 strokeWeight(0.2);
                 stroke(191, 74, 191);
                 //stroke(newXy.x,newXy.y,0);
@@ -93,11 +110,20 @@ var bigDraw = function(which) {
                 stroke(117,3,133);
                 strokeWeight(1);
                 circ(newXy.x,newXy.y,1);
+            }
             
         }
     } 
     for (var i = width/2; i >= 0;i = i - seps) {
         for (var q = height/2; q <= height ;q = q + seps) {
+                var xy = new PVector(i,q);
+           // circ(i,q,1);
+            var eD = eDistC(i,q);
+            var newXy = deform(xy,eD);
+            if (xy === newXy) {
+                circ(xy.x,xy.y,.3);
+                
+            } else {
                 strokeWeight(0.2);
                 stroke(191, 74, 191);
                 //stroke(newXy.x,newXy.y,0);
@@ -107,9 +133,18 @@ var bigDraw = function(which) {
                 stroke(117,3,133);
                 strokeWeight(1);
                 circ(newXy.x,newXy.y,1);
+            }
             
         }
         for (var q = height/2; q >= 0 ;q = q - seps) {
+                var xy = new PVector(i,q);
+           // circ(i,q,1);
+            var eD = eDistC(i,q);
+            var newXy = deform(xy,eD);
+            if (xy === newXy) {
+                circ(xy.x,xy.y,.3);
+                
+            } else {
                 strokeWeight(0.2);
                 stroke(191, 74, 191);
                 //stroke(newXy.x,newXy.y,0);
@@ -119,6 +154,7 @@ var bigDraw = function(which) {
                 stroke(117,3,133);
                 strokeWeight(1);
                 circ(newXy.x,newXy.y,1);
+            }
             
         }
     }
