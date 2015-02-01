@@ -94,7 +94,7 @@ rectMode(CENTER);
 rectMode(RADIUS);
 translate(width/2,height/2);
 rotate(PI/4);
-rect(0,0,2*seps * sqrt(2),2*seps * sqrt(2));
+rect(0,0,seps * sqrt(2),seps * sqrt(2));
 rotate(-PI/4);
 translate(-width/2,-height/2);
 bigDraw();
