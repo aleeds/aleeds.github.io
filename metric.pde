@@ -1,4 +1,4 @@
-println(pow(pow(25,3)+pow(12,3),.33333333));
+
 size(800,800);
 background(250, 248, 239);
 strokeWeight(2);
