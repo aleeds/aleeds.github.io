@@ -86,13 +86,13 @@ var smallDraw = function(i,q) {
                 //var third = new PVector(i+seps,q-seps);
                 //var forth = new PVector(i+seps,q+seps);
                 var fst = deform(first,eDistC(first.x,first.y));
-                second = deform(second,eDistC(second.x,second.y));
+                var scd  = deform(second,eDistC(second.x,second.y));
                 third = deform(third,eDistC(third.x,third.y));
                 fourth = deform(fourth,eDistC(fourth.x,fourth.y));
                 strokeWeight(.2);
                 strokeWeight(0,0,0);
                 line(newXy.x,newXy.y,fst.x,fst.y);
-                line(newXy.x,newXy.y,second.x,second.y);
+                line(newXy.x,newXy.y,scd.x,scd.y);
                 //line(newXy.x,newXy.y,third.x,third.y);
                 //line(newXy.x,newXy.y,fourth.x,fourth.y);
                 if (xy === newXy) {
