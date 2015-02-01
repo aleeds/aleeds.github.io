@@ -1,4 +1,5 @@
 size(800,800);
+println("Does this work");
 background(250, 248, 239);
 strokeWeight(2);
 rect(0,0,width,height);
@@ -73,23 +74,23 @@ var bigDraw = function(which) {
     for (var i = width/2; i <= width;i = i + seps) {
         for (var q = height/2; q <= height ;q = q + seps) {
                 var xy = new PVector(i,q);
-           // circ(i,q,1);
-            var eD = eDistC(i,q);
-            var newXy = deform(xy,eD);
-            if (xy === newXy) {
-                circ(xy.x,xy.y,.3);
+                // circ(i,q,1);
+                var eD = eDistC(i,q);
+                var newXy = deform(xy,eD);
+                if (xy === newXy) {
+                    circ(xy.x,xy.y,.3);
                 
-            } else {
-                strokeWeight(0.2);
-                stroke(191, 74, 191);
-                //stroke(newXy.x,newXy.y,0);
-                strokeWeight(eDist(newXy.x,newXy.y,xy.x,xy.y)/300);
-                line(xy.x,xy.y,newXy.x,newXy.y);
+                } else {
+                    strokeWeight(0.2);
+                    stroke(191, 74, 191);
+                    //stroke(newXy.x,newXy.y,0);
+                    strokeWeight(eDist(newXy.x,newXy.y,xy.x,xy.y)/300);
+                    line(xy.x,xy.y,newXy.x,newXy.y);
                 
-                stroke(117,3,133);
-                strokeWeight(1);
-                circ(newXy.x,newXy.y,1);
-            }
+                    stroke(117,3,133);
+                    strokeWeight(1);
+                    circ(newXy.x,newXy.y,1);
+                }
             
         }
         for (var q = height/2; q >= 0 ;q = q - seps) {
