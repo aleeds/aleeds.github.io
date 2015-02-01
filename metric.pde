@@ -89,7 +89,7 @@ var smallDraw = function(i,q) {
                 //second = deform(second,eDistC(second.x,second.y));
                 //third = deform(third,eDistC(third.x,third.y));
                 //fourth = deform(fourth,eDistC(fourth.x,fourth.y));
-                //strokeWeight(.1);
+                strokeWeight(.1);
                 line(newXy.x,newXy.y,fst.x,fst.y);
                 //line(newXy.x,newXy.y,second.x,second.y);
                 //line(newXy.x,newXy.y,third.x,third.y);
