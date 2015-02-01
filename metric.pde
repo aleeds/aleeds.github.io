@@ -110,7 +110,7 @@ var smallDraw = function(i,q) {
                 
                     stroke(117,3,133);
                     strokeWeight(1);
-                    circ(newXy.x,newXy.y,1);
+                    circ(newXy.x,newXy.y,.3);
                     
                 }
 }
