@@ -1,5 +1,4 @@
 size(800,800);
-println("Does this work");
 background(250, 248, 239);
 strokeWeight(2);
 rect(0,0,width,height);
@@ -70,9 +69,7 @@ var deform = function(po,eD) {
 
 };
 
-var bigDraw = function(which) {
-    for (var i = width/2; i <= width;i = i + seps) {
-        for (var q = height/2; q <= height ;q = q + seps) {
+var smallDraw = function(i,q) {
                 var xy = new PVector(i,q);
                 // circ(i,q,1);
                 var eD = eDistC(i,q);
@@ -91,6 +88,12 @@ var bigDraw = function(which) {
                     strokeWeight(1);
                     circ(newXy.x,newXy.y,1);
                 }
+}
+
+var bigDraw = function(which) {
+    for (var i = width/2; i <= width;i = i + seps) {
+        for (var q = height/2; q <= height ;q = q + seps) {
+                smallDraw(i,q);
             
         }
         for (var q = height/2; q >= 0 ;q = q - seps) {
