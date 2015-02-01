@@ -71,8 +71,19 @@ var deform = function(po,eD) {
 };
 
 var bigDraw = function(which) {
-    for (var i = 0; i < width ;i = i + seps) {
-      for (var q = 0; q < height ; q = q + seps) {
+    for (var i = width/2; i <= width ;i = i + seps) {
+      for (var q = height/2; q <= height ; q = q + seps) {
+        circ(i,q,.2);
+      }
+      or (var q = height/2; q >= 0 ; q = q - seps) {
+        circ(i,q,.2);
+      }
+    }
+    for (var i = width/2; i >= 0 ;i = i - seps) {
+      for (var q = height/2; q <= height ; q = q + seps) {
+        circ(i,q,.2);
+      }
+      or (var q = height/2; q >= 0 ; q = q - seps) {
         circ(i,q,.2);
       }
     }
