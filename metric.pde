@@ -90,9 +90,9 @@ var smallDraw = function(i,q) {
                 fourth = deform(fourth,eDistC(fourth.x,fourth.y));
                 strokeWeight(.1);
                 line(newXy.x,newXy.y,fst.x,fst.y);
-                line(newXy.x,newXy.y,second.x,second.y);
-                line(newXy.x,newXy.y,third.x,third.y);
-                line(newXy.x,newXy.y,fourth.x,fourth.y);
+                //line(newXy.x,newXy.y,second.x,second.y);
+                //line(newXy.x,newXy.y,third.x,third.y);
+                //line(newXy.x,newXy.y,fourth.x,fourth.y);
                 if (xy === newXy) {
                     circ(newXy.x,newXy.y,.3);
                 
