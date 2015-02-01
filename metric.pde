@@ -97,68 +97,17 @@ var bigDraw = function(which) {
             
         }
         for (var q = height/2; q >= 0 ;q = q - seps) {
-               var xy = new PVector(i,q);
-           // circ(i,q,1);
-            var eD = eDistC(i,q);
-            var newXy = deform(xy,eD);
-            if (xy === newXy) {
-                circ(xy.x,xy.y,.3);
-                
-            } else {
-                strokeWeight(0.2);
-                stroke(191, 74, 191);
-                //stroke(newXy.x,newXy.y,0);
-                strokeWeight(eDist(newXy.x,newXy.y,xy.x,xy.y)/300);
-                line(xy.x,xy.y,newXy.x,newXy.y);
-                
-                stroke(117,3,133);
-                strokeWeight(1);
-                circ(newXy.x,newXy.y,1);
-            }
+            smallDraw(i,q);
             
         }
     } 
     for (var i = width/2; i >= 0;i = i - seps) {
         for (var q = height/2; q <= height ;q = q + seps) {
-                var xy = new PVector(i,q);
-           // circ(i,q,1);
-            var eD = eDistC(i,q);
-            var newXy = deform(xy,eD);
-            if (xy === newXy) {
-                circ(xy.x,xy.y,.3);
-                
-            } else {
-                strokeWeight(0.2);
-                stroke(191, 74, 191);
-                //stroke(newXy.x,newXy.y,0);
-                strokeWeight(eDist(newXy.x,newXy.y,xy.x,xy.y)/300);
-                line(xy.x,xy.y,newXy.x,newXy.y);
-                
-                stroke(117,3,133);
-                strokeWeight(1);
-                circ(newXy.x,newXy.y,1);
-            }
+            smallDraw(i,q);
             
         }
         for (var q = height/2; q >= 0 ;q = q - seps) {
-                var xy = new PVector(i,q);
-           // circ(i,q,1);
-            var eD = eDistC(i,q);
-            var newXy = deform(xy,eD);
-            if (xy === newXy) {
-                circ(xy.x,xy.y,.3);
-                
-            } else {
-                strokeWeight(0.2);
-                stroke(191, 74, 191);
-                //stroke(newXy.x,newXy.y,0);
-                strokeWeight(eDist(newXy.x,newXy.y,xy.x,xy.y)/300);
-                line(xy.x,xy.y,newXy.x,newXy.y);
-                
-                stroke(117,3,133);
-                strokeWeight(1);
-                circ(newXy.x,newXy.y,1);
-            }
+           smallDraw(i,q);
             
         }
     }
