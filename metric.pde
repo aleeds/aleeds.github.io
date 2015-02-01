@@ -7,13 +7,13 @@ rect(0,0,width,height);
 
 strokeWeight(1);
 ellipseMode(CENTER);
-circ(width/2,height/2,2*seps,2*seps);
+
 var circ = function(x,y,r) {
     ellipse(x,y,r,r);
 };
 
 var seps = 20;
-
+circ(width/2,height/2,2*seps,2*seps);
 
 
 var w = width;
