@@ -29,7 +29,7 @@ var eDist = function(xone,yone,xtwo,ytwo) {
 var dist1 = function(xone,yone,xtwo,ytwo) {
     var distX = xone - xtwo;
     var distY = yone - ytwo;
-    return abs(distX) + abs(distY);
+    //return abs(distX) + abs(distY);
     return max(distX,distY);
 };
 
