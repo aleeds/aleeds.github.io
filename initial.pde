@@ -73,7 +73,7 @@ var deform = function(po,eD) {
 var bigDraw = function(which) {
     for (var i = width/2; i <= width ;i = i + seps) {
       for (var q = height/2; q <= height ; q = q + seps) {
-        circ(i,q,.2);
+        circ(i,q,.05);
         strokeWeight(.2);
         line(i, q,i+seps,q);
         line(i, q,i-seps,q);
@@ -82,7 +82,7 @@ var bigDraw = function(which) {
         strokeWeight(1);
       }
       for (var q = height/2; q >= 0 ; q = q - seps) {
-        circ(i,q,.2);
+        circ(i,q,.05);
         strokeWeight(.2);
         line(i, q,i+seps,q);
         line(i, q,i-seps,q);
@@ -93,7 +93,7 @@ var bigDraw = function(which) {
     }
     for (var i = width/2; i >= 0 ;i = i - seps) {
       for (var q = height/2; q <= height ; q = q + seps) {
-        circ(i,q,.2);
+        circ(i,q,.05);
         strokeWeight(.2);
         line(i, q,i+seps,q);
         line(i, q,i-seps,q);
@@ -102,7 +102,7 @@ var bigDraw = function(which) {
         strokeWeight(1);
       }
       for (var q = height/2; q >= 0 ; q = q - seps) {
-        circ(i,q,.2);
+        circ(i,q,.05);
         strokeWeight(.2);
         line(i, q,i+seps,q);
         line(i, q,i-seps,q);
