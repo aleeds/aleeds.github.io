@@ -48,7 +48,7 @@ var midPoint = function(one,two) {
 
 var deform = function(po,eD) {
     var tPLower = new PVector(cX,cY);
-    var tPUpper = new PVector(po.x,po.y);
+    var tPUpper = new PVector(2*po.x -cX,2*po.y -cY);
     var tP = midPoint(tPUpper,tPLower);
     if (dist1C(po.x,po.y) === eD) {
         return po;
