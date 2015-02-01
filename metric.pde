@@ -123,7 +123,7 @@ var bigDraw = function(which) {
         }
     }
     
-}
+
 };
 
 
