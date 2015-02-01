@@ -4,9 +4,10 @@ background(250, 248, 239);
 strokeWeight(2);
 
 rect(0,0,width,height);
-circ(width/2,height/2,2*seps,2*seps);
+
 strokeWeight(1);
 ellipseMode(CENTER);
+circ(width/2,height/2,2*seps,2*seps);
 var circ = function(x,y,r) {
     ellipse(x,y,r,r);
 };
