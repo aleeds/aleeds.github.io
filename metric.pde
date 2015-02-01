@@ -1,4 +1,4 @@
-println(Math.cbrt(27));
+
 size(800,800);
 background(250, 248, 239);
 strokeWeight(2);
@@ -35,7 +35,7 @@ var myMax = function(one,two) {
 var dist1 = function(xone,yone,xtwo,ytwo) {
     var distX = xone - xtwo;
     var distY = yone - ytwo;
-    return abs(distX) + abs(distY);
+    //return abs(distX) + abs(distY);
     //return myMax(distX,distY);
     return Math.cbrt(pow(distX,3) + pow(distY,3));
 };
