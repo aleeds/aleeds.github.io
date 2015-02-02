@@ -103,7 +103,7 @@ var smallDraw = function(i,q) {
                 
                 } else {
                     strokeWeight(.15);
-                    stroke(0, 124, 133);
+                    stroke(2, 195, 209);
                     //stroke(newXy.x,newXy.y,0);
                     //strokeWeight(eDist(newXy.x,newXy.y,xy.x,xy.y)/100);
                     line(xy.x,xy.y,newXy.x,newXy.y);
