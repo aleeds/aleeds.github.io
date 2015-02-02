@@ -108,7 +108,7 @@ var smallDraw = function(i,q) {
                     //strokeWeight(eDist(newXy.x,newXy.y,xy.x,xy.y)/100);
                     line(xy.x,xy.y,newXy.x,newXy.y);
                 
-                    stroke(117,3,133);
+                    stroke(71,74,15);
                     strokeWeight(1);
                     circ(newXy.x,newXy.y,.3);
                     
