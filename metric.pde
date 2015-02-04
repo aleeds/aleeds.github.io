@@ -1,4 +1,3 @@
-println("Circle stuff");
 size(800,800);
 background(250, 248, 239);
 strokeWeight(2);
@@ -87,11 +86,11 @@ var drawCirc = function() {
         stroke(255,0,0);
         var first = new PVector(x,y);
         var firstD = deform(first,eDistC(x,y));
-        circ(firstD.x,firstD.y,5);
+        circ(firstD.x,firstD.y,1);
         y = -1*sqrt(50*50 - (x - 400) * (x - 400)) + 400;
         var second = new PVector(x,y);
         var secondD = deform(second,eDistC(x,y));
-        circ(secondD.x,secondD.y,5);
+        circ(secondD.x,secondD.y,1);
     }
 
 }
