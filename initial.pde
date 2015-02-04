@@ -18,7 +18,7 @@ var drawCirc = function() {
         var y = sqrt(50*50 - (x - 400) * (x - 400)) + 400;
         stroke(255,0,0);
         circ(x,y,5);
-        y = -1 * y;
+        y = -1*sqrt(50*50 - (x - 400) * (x - 400)) + 400;
         circ(x,y,5);
     }
 
