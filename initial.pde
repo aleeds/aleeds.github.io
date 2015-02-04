@@ -14,7 +14,7 @@ var circ = function(x,y,r) {
 var seps = 20;
 
 var drawCirc = function() {
-    for (var x = 351;x < 449;x = x + 10) {
+    for (var x = 350;x < 450;x = x + 10) {
         var y = sqrt(50*50 - (x - 400) * (x - 400)) + 400;
         stroke(255,0,0);
         circ(x,y,5);
@@ -124,6 +124,7 @@ var bigDraw = function(which) {
 };
 
 drawCirc();
+stroke(0,0,0);
 rectMode(CENTER);
 rectMode(RADIUS);
 translate(width/2,height/2);
