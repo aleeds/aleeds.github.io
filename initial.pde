@@ -12,7 +12,16 @@ var circ = function(x,y,r) {
 
 var seps = 20;
 
+var drawCirc = function() {
+    for (var x = 350;x < 450;x = x + 10) {
+        var y = root(50 - (x-400) * (x - 400)) + 400;
+        stroke(255,0,0);
+        circ(x,y,5);
+        y = -1 * y;
+        circ(x,y,5);
+    }
 
+}
 
 var w = width;
 var h = height;
@@ -113,7 +122,7 @@ var bigDraw = function(which) {
     }
 };
 
-
+drawCirc();
 rectMode(CENTER);
 rectMode(RADIUS);
 translate(width/2,height/2);
