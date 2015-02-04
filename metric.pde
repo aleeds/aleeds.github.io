@@ -1,4 +1,4 @@
-print("Circle stuff");
+println("Circle stuff");
 size(800,800);
 background(250, 248, 239);
 strokeWeight(2);
@@ -160,7 +160,7 @@ var bigDraw = function(which) {
 
 };
 
-
+drawCirc();
 bigDraw();
 
 
