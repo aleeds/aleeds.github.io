@@ -5,6 +5,7 @@ rect(0,0,width,height);
 strokeWeight(1);
 ellipseMode(CENTER);
 
+println("Stuff");
 
 var circ = function(x,y,r) {
     ellipse(x,y,r,r);
