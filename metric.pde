@@ -16,6 +16,8 @@ var seps = 20;
 circ(width/2,height/2,2*seps,2*seps);
 
 
+
+
 var w = width;
 var h = height;
 var cX = w/2;
@@ -78,6 +80,24 @@ var deform = function(po,eD) {
     return tP;
 
 };
+
+var drawCirc = function() {
+    for (var x = 350;x < 450;x = x + 2) {
+        var y = sqrt(50*50 - (x - 400) * (x - 400)) + 400;
+        stroke(255,0,0);
+        var first = new PVector(x,y);
+        var firstD = deform(first,eDistC(x,y));
+        circ(firstD.x,firstD.y,5);
+        y = -1*sqrt(50*50 - (x - 400) * (x - 400)) + 400;
+        var second = new PVector(x,y);
+        var secondD = deform(second,eDistC(x,y));
+        circ(secondD.x,secondD.y,5);
+    }
+
+}
+
+
+
 
 var smallDraw = function(i,q) {
                 var xy = new PVector(i,q);
