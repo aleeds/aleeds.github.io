@@ -15,11 +15,11 @@ var seps = 20;
 
 var drawCirc = function() {
     for (var x = 351;x < 449;x = x + 10) {
-        var y = root(50*50 - (x-400) * (x - 400)) + 400;
-        stroke(255,0,0);
-        circ(x,y,5);
-        y = -1 * y;
-        circ(x,y,5);
+        //var y = root(50*50 - (x-400) * (x - 400)) + 400;
+        //stroke(255,0,0);
+        //circ(x,y,5);
+        //y = -1 * y;
+        //circ(x,y,5);
     }
 
 }
