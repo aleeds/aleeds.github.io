@@ -1,4 +1,3 @@
-println("Hello");
 size(800,800);
 background(250, 248, 239);
 strokeWeight(2);
@@ -105,6 +104,7 @@ var smallDraw = function(i,q) {
                 var eD = eDistC(i,q);
                 var newXy = deform(xy,eD);
                 var eD2 = eDistC(newXy.x,newXy.y);
+                circ(newXy.x,newXy.y,5);
                 var nextXyAgain = deform(nexXy,eD2);
                 circ(nextXyAgain.x,nextXyAgain.y,5);
 }
