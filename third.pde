@@ -1,4 +1,3 @@
-println("GAAAAH");
 size(800,800);
 background(250, 248, 239);
 strokeWeight(2);
@@ -101,25 +100,11 @@ var drawCirc = function() {
 
 var smallDraw = function(i,q) {
                 var xy = new PVector(i,q);
-                // circ(i,q,1);
+                
                 var eD = eDistC(i,q);
                 var newXy = deform(xy,eD);
-                /*
-                var first = new PVector(i-seps,q-0);
-                var second = new PVector(i-0,q+seps);
-                var third = new PVector(i+0,q-seps);
-                var fourth = new PVector(i+seps,q+0);
-                var fst = deform(first,eDistC(first.x,first.y));
-                var scd  = deform(second,eDistC(second.x,second.y));
-                var thrd = deform(third,eDistC(third.x,third.y));
-                var frth = deform(fourth,eDistC(fourth.x,fourth.y));
-                strokeWeight(.2);
-                stroke(0,0,0);
-                line(newXy.x,newXy.y,fst.x,fst.y);
-                line(newXy.x,newXy.y,scd.x,scd.y);
-                line(newXy.x,newXy.y,thrd.x,thrd.y);
-                line(newXy.x,newXy.y,frth.x,frth.y);
-                */
+                eD = eDistC(nexXy.x,newXy.y);
+                newXy = deform(newXy,eD);
                 if (xy === newXy) {
                     circ(newXy.x,newXy.y,.3);
                 
