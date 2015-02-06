@@ -100,7 +100,7 @@ var drawCirc = function() {
 
 var smallDraw = function(i,q) {
                 var xy = new PVector(i,q);
-                // circ(i,q,1);
+                circ(i,q,1);
                 var eD = eDistC(i,q);
                 var newXy = deform(xy,eD);
                 var eD2 = eDistC(newXy.x,newXy.y);
