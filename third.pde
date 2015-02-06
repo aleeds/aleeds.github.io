@@ -99,6 +99,7 @@ var drawCirc = function() {
 
 
 var smallDraw = function(i,q) {
+                stroke(0,0,0);
                 var xy = new PVector(i,q);
                 circ(i,q,1);
                 var eD = eDistC(i,q);
