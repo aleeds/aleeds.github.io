@@ -104,10 +104,11 @@ var smallDraw = function(i,q) {
                 circ(i,q,1);
                 var eD = eDistC(i,q);
                 var newXy = deform(xy,eD);
-                var eD2 = eDistC(newXy.x,newXy.y);
                 circ(newXy.x,newXy.y,15);
+                var eD2 = eDistC(newXy.x,newXy.y);
+                
                 var nextXyAgain = deform(nexXy,eD2);
-                circ(nextXyAgain.x,nextXyAgain.y,15);
+                //circ(nextXyAgain.x,nextXyAgain.y,15);
 }
 
 var bigDraw = function(which) {
