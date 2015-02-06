@@ -100,16 +100,41 @@ var drawCirc = function() {
 
 
 var smallDraw = function(i,q) {
-                stroke(0,0,0);
                 var xy = new PVector(i,q);
-                circ(i,q,1);
+                // circ(i,q,1);
                 var eD = eDistC(i,q);
                 var newXy = deform(xy,eD);
-                circ(newXy.x,newXy.y,15);
-                var eD2 = eDistC(newXy.x,newXy.y);
+                /*
+                var first = new PVector(i-seps,q-0);
+                var second = new PVector(i-0,q+seps);
+                var third = new PVector(i+0,q-seps);
+                var fourth = new PVector(i+seps,q+0);
+                var fst = deform(first,eDistC(first.x,first.y));
+                var scd  = deform(second,eDistC(second.x,second.y));
+                var thrd = deform(third,eDistC(third.x,third.y));
+                var frth = deform(fourth,eDistC(fourth.x,fourth.y));
+                strokeWeight(.2);
+                stroke(0,0,0);
+                line(newXy.x,newXy.y,fst.x,fst.y);
+                line(newXy.x,newXy.y,scd.x,scd.y);
+                line(newXy.x,newXy.y,thrd.x,thrd.y);
+                line(newXy.x,newXy.y,frth.x,frth.y);
+                */
+                if (xy === newXy) {
+                    circ(newXy.x,newXy.y,.3);
                 
-                var nextXyAgain = deform(nexXy,eD2);
-                //circ(nextXyAgain.x,nextXyAgain.y,15);
+                } else {
+                    strokeWeight(.15);
+                    stroke(2, 195, 209);
+                    //stroke(newXy.x,newXy.y,0);
+                    //strokeWeight(eDist(newXy.x,newXy.y,xy.x,xy.y)/100);
+                    line(xy.x,xy.y,newXy.x,newXy.y);
+                
+                    stroke(71,74,15);
+                    strokeWeight(1);
+                    circ(newXy.x,newXy.y,.3);
+                    
+                }
 }
 
 var bigDraw = function(which) {
