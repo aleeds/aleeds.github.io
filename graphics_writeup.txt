@@ -1,0 +1,19 @@
+﻿Graphics Writeup 
+Andy Leeds
+
+
+To switch between the visualizations, press right on the keyboard.
+
+The data I am visualizing is the NBA box scores for the 2014- 2015 season. I use Dr. Cabral’s Oracle ranking method to rank the various teams in the NBA, and then use those ranks to display the progress of the season. 
+
+
+First Approach:
+
+
+The first approach I used to visualize the data depicts the 30 NBA teams arranged around the circles, and depicts the teams growing and shrinking as the NBA season goes on. I used interactivity to show the teams as the season continues (it’s really animation, but looks better when you can control it). From an aesthetics perspective, it looks great, the teams are arranged nicely, and having them grow and shrink as the season goes on gives a great amount of insight into the season. From a utility perspective, the graphic gives off a lot of information. The size of the logos immediately gives off how good the team is at the time. And while the eye isn’t so good at distinguishing between the best team and the second best team, say, its really good at telling between the bad teams and the good teams. That is what matters anyways, as the ranking isn’t perfect, it just gives a good idea of how the season is going. 
+
+
+Second Approach:
+
+
+The second approach was the use of parallel coordinates. I displayed the score assigned by the Oracle ranking method vs. the week. I used interactivity to show additional details, allowing the user to filter out teams selectively, by clicking on their logos at the top of the screen. This allows the user to see the progress over time of any given subset of the teams. From an aesthetics perspective, this looks a little messy. However, when teams are filtered out, it looks great, and really shows the teams ranking becoming more accurate over time. Also from an aesthetics perspective, it beautifully shows the stability of the rankings over time. From a utility perspective, it shows a lot of information all at once, and allows the user to filter out the graphic to see only the information that they actually want to see. In that respect it is great.
